@@ -1,0 +1,9 @@
+#!/bin/sh
+directory=$1
+timer=$2
+while true;
+do
+  resolution=$(xdpyinfo | grep dimensions | awk '{print $2'})
+  find ${directory}/${resolution}/ -type f -name '*.jpg' -o -name '*.png' | shuf -n 1 | xargs feh --bg-scale
+  sleep 1m
+done
