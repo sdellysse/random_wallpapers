@@ -1,2 +1,2 @@
-ln -sf ./random_wallpapers ~/bin/random_wallpapers
+ln -sf `pwd`/random_wallpapers ~/bin/random_wallpapers
 
